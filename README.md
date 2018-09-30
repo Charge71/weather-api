@@ -1,13 +1,13 @@
 Java Test Case Study
 ====================
 
-**API service using Java which retrieve the average forecast weather metrics of a specific city using [OpenWeatherM](https://openweathermap.org)**
+**API service using Java which retrieve the average forecast weather metrics of a specific city using [OpenWeatherMap](https://openweathermap.org)**
 
 Prerequisites
 -------------
 
-* JDK 1.8 or newer [Download](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-* Maven [Download](https://maven.apache.org/download.cgi)
+* JDK 1.8 or newer ([Download](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
+* Maven ([Download](https://maven.apache.org/download.cgi))
 
 Build the project
 -----------------

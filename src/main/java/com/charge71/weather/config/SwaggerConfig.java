@@ -31,7 +31,7 @@ public class SwaggerConfig {
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.ant("/v1/**")).build().apiInfo(metaData())
-				.tags(new Tag("weather", "Weather forecast operations"));
+				.tags(new Tag("weather", "Weather forecast operations")).useDefaultResponseMessages(false);
 	}
 
 	/**

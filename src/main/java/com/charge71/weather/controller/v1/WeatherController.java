@@ -23,6 +23,8 @@ import com.charge71.weather.validation.ValidCity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 /**
  * Controller for APIs related to weather forecast. API version 1.
@@ -55,6 +57,9 @@ public class WeatherController {
 	 */
 	@GetMapping(path = "/data", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation("Return a list of forecast for the cities with the given CITY name")
+	@ApiResponses({ @ApiResponse(code = 200, message = "OK"),
+			@ApiResponse(code = 400, message = "Invalid city name supplied"),
+			@ApiResponse(code = 500, message = "Internal server error") })
 	public ResponseEntity<ResponseItems<DataResponseItem>> data(
 			@ApiParam(value = "The name of the city", required = true) @RequestParam("CITY") @ValidCity String cityName) {
 		logger.info("Requested data for city name: " + cityName);
