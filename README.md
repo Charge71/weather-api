@@ -9,6 +9,13 @@ Prerequisites
 * JDK 1.8 or newer ([Download](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
 * Maven ([Download](https://maven.apache.org/download.cgi))
 
+Clone the project
+-----------------
+
+From the command line using git
+
+`git clone https://github.com/Charge71/weather-api.git`
+
 Build the project
 -----------------
 
